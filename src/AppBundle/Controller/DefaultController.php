@@ -21,7 +21,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/api/test",name="api_test")
+     * @Route("/api/login",name="api_test")
      */
     public function testAction(Request $request)
     {
