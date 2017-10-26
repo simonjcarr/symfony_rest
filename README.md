@@ -10,6 +10,7 @@ It includes
 * nelmio/NelmioCorsBundle
 * lexik/LexikJWTAuthenticationBundle
 * FOSUserBundle
+* DoctrineMigrationsBundle
 
 I have purposefully not added FOSRestBundle or any serializer bundle as the the built in Symfony Response and Serializer tools can do this, leaving the package as clean as possible.
 
