@@ -20,6 +20,8 @@ Enjoy.
 Installation
 ============
 
+Make sure to checkout the Master Branch
+
 Generate SSH Keys
 -----------------
 ````
