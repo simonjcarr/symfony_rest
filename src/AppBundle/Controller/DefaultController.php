@@ -26,7 +26,7 @@ class DefaultController extends Controller
     public function testAction(Request $request)
     {
         $data = [
-            'message'=>'Hello World'
+            'message'=>'Test was successful'
         ];
         $json = json_encode($data);
 
