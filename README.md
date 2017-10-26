@@ -1,3 +1,22 @@
+About
+=====
+After many hours to struggling with CORS while trying to get Vue 2 to talk
+to my Symfony API, I finally pulled this working distribution together.
+
+It is simply the the minimum required packages for a Symfony API and it works.
+
+It includes
+
+* nelmio/NelmioCorsBundle
+* lexik/LexikJWTAuthenticationBundle
+* FOSUserBundle
+
+I have purposefully not added FOSRestBundle or any serializer bundle as the the built in Symfony Response and Serializer tools can do this, leaving the package as clean as possible.
+
+Enjoy. 
+
+
+
 Installation
 ============
 
