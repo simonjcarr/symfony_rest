@@ -1,3 +1,44 @@
+About
+=====
+After many hours to struggling with CORS while trying to get Vue 2 to talk
+to my Symfony API, I finally pulled this working distribution together.
+
+It is simply the the minimum required packages for a Symfony API and it works.
+
+It includes
+
+* nelmio/NelmioCorsBundle
+* lexik/LexikJWTAuthenticationBundle
+* FOSUserBundle
+* DoctrineMigrationsBundle
+
+I have purposefully not added FOSRestBundle or any serializer bundle as the the built in Symfony Response and Serializer tools can do this, leaving the package as clean as possible.
+
+Enjoy. 
+
+
+
+Installation
+============
+
+Make sure to checkout the Master Branch
+
+Generate SSH Keys
+-----------------
+````
+$ mkdir -p var/jwt # For Symfony3+, no need of the -p option
+$ openssl genrsa -out var/jwt/private.pem -aes256 4096 
+$ openssl rsa -pubout -in var/jwt/private.pem -out var/jwt/public.pem
+````
+Add your the password you used to generate to keys to your parameters file
+````
+jwt_private_key_path: '%kernel.root_dir%/../var/jwt/private.pem' # ssh private key path
+jwt_public_key_path:  '%kernel.root_dir%/../var/jwt/public.pem'  # ssh public key path
+jwt_key_pass_phrase:  'Your Password'                             # ssh key pass phrase
+jwt_token_ttl:        3600
+````
+
+
 Symfony Standard Edition
 ========================
 
